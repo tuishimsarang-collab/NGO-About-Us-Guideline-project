@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hope Rise Foundation - About Us & Admin</title>
+  <style>
+    :root {
+      --primary-blue: #0275d8;
+      --secondary-blue: #0056b3;
+      --green-btn: #28a745;
+      --red-btn: #dc3545;
+      --bg-light: #f4f6f9;
+      --text-dark: #333;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    header {
+      background-color: var(--primary-blue);
+      color: white;
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    section {
+      background: var(--card-bg);
+      padding: 25px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: var(--primary-blue);
+      margin-bottom: 15px;
+      border-bottom: 2px solid var(--bg-light);
+      padding-bottom: 8px;
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    /* Metrics Cards */
+    .metric-card {
+      background: #e9f2fb;
+      padding: 20px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .metric-card h3 {
+      font-size: 2rem;
+      color: var(--secondary-blue);
+    }
+
+    /* Team Members */
+    .team-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f8f9fa;
+    }
+
+    /* Buttons */
+    .btn {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-green { background-color: var(--green-btn); }
+    .btn-blue { background-color: var(--primary-blue); }
+    .btn-red { background-color: var(--red-btn); }
+
+    /* CTA Section */
+    .cta-banner {
+      background: var(--primary-blue);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .cta-banner .btn {
+      margin: 10px 5px 0 5px;
+    }
+
+    @media (max-width: 600px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- HEADER -->
+    <header>
+      <h1>Hoperise Foundation [NGO]</h1>
+      <p>Empowering communities, building a brighter future.</p>
+    </header>
+
+    <!-- MISSION & VISION -->
+    <section>
+      <h2>Mission & Vision</h2>
+      <div class="grid-2">
+        <div>
+          <h3>Our Mission</h3>
+          <p>To provide quality education, healthcare resources, and sustainable livelihood programs that empower underserved communities to rise above poverty[cite: 1].</p>
+        </div>
+        <div>
+          <h3>Our Vision</h3>
+          <p>A world where every individual, regardless of background, has the opportunity to live with dignity, self-reliance, and hope[cite: 1].</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT METRICS -->
+    <section>
+      <h2>Our Annual Impact</h2>
+      <div class="grid-4">
+        <div class="metric-card">
+          <h3>5,000+</h3>
+          <p>Children Educated[cite: 1]</p>
+        </div>
+        <div class="metric-card">
+          <h3>50+</h3>
+          <p>Health Camps Conducted[cite: 1]</p>
+        </div>
+        <div class="metric-card">
+          <h3>200</h3>
+          <p>Women Empowered[cite: 1]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section>
+      <h2>Our Programs</h2>
+      <ul>
+        <li><strong>Free Education Resources for Children:</strong> Academic materials, tools, and learning support[cite: 1].</li>
+        <li><strong>Healthcare Camps in Rural Areas:</strong> Medical check-ups and essential health services[cite: 1].</li>
+        <li><strong>Vocational Training for Women:</strong> Skill-building programs for financial independence[cite: 1].</li>
+      </ul>
+    </section>
+
+    <!-- TEAM -->
+    <section>
+      <h2>Meet Our Team</h2>
+      <div class="grid-2">
+        <div class="team-card">
+          <h3>John Doe</h3>
+          <p><strong>Founder</strong>[cite: 1]</p>
+          <p>Leading the foundation with a vision for community empowerment since inception[cite: 1].</p>
+        </div>
+        <div class="team-card">
+          <h3>Jane Smith</h3>
+          <p><strong>Program Manager</strong>[cite: 1]</p>
+          <p>Overseeing sustainable and impactful program implementation[cite: 1].</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <div class="cta-banner">
+      <h2>Make A Difference Today</h2>
+      <p>Support our mission through donations and volunteer opportunities[cite: 1].</p>
+      <button class="btn btn-green">Donate Now</button>
+      <button class="btn btn-blue">Become A Volunteer</button>
+    </div>
+
+    <br>
+
+    <!-- ADMIN DASHBOARD OVERVIEW -->
+    <section>
+      <h2>Admin Dashboard - Database Modules</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Table Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>our_story</code></td>
+            <td>Stores the main NGO story (single record)[cite: 1].</td>
+          </tr>
+          <tr>
+            <td><code>core_values</code></td>
+            <td>Stores multiple core values independently[cite: 1].</td>
+          </tr>
+          <tr>
+            <td><code>programs</code></td>
+            <td>Manages active and inactive programs[cite: 1].</td>
+          </tr>
+          <tr>
+            <td><code>team_members</code></td>
+            <td>Holds team profiles, roles, and image URLs[cite: 1].</td>
+          </tr>
+          <tr>
+            <td><code>our_impact</code></td>
+            <td>Tracks dynamic achievement counters and KPI statistics[cite: 1].</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </div>
+
+</body>
+</html>
